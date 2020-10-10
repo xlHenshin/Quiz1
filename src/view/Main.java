@@ -26,67 +26,49 @@ public class Main extends PApplet{
 		
 		figuredraw = new FigureDraw(this);
 		randomfigure=0;
-		
-		figure = loadStrings("../resources/TXT.txt");
-		words = new ArrayList<String>();
-		
-		for (int i = 0; i < figure.length; i++) {
-			String [] tempArray = figure[i].split("\\r\\n|\\n|\\r");
-			
-			for (int j = 0; j < tempArray.length; j++) {
-				words.add(tempArray[j]);
-			}
-		}
-
-		for (String element : words) {
-			System.out.println(element);
-		}
+	
 	}
 	
 	public void draw() {
 		background(0);
 		
-		figuredraw.drawCircle();
-		figuredraw.drawSquare();
-		
-		
 		switch (randomfigure) {
 		case 1:
-			
 			figuredraw.drawCircle();
-			
 			randomfigure=0;
 			break;
 			
 		case 2:
-			
 			figuredraw.drawSquare();
-			
 			randomfigure=0;
 			break;
 
 		default:
 			break;
 		}
+		
+		//figuredraw.drawCircle();
+		//figuredraw.drawSquare();
+		
+		
 	}
 	
-	public void mousePressed() {
+	public void mouseClicked() {
 		
-		int generate = (int) random (0,2);
+		int generate = (int) random (0,3);
 		
 		switch (generate) {
+		
 		case 1:
 			
-			randomfigure=generate;
-			
+			randomfigure=1;
 			break;
 			
 		case 2:
 			
-			randomfigure=generate;
-			
+			randomfigure=2;
 			break;
-
+			
 		default:
 			break;
 		}

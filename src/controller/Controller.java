@@ -13,6 +13,8 @@ public class Controller {
 		logic = new Logic(app);
 	}
 	
+
+	
 	public void drawCircle() {
 		
 		logic.drawCircle();
