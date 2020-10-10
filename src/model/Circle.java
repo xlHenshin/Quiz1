@@ -4,9 +4,9 @@ import processing.core.PApplet;
 
 public class Circle extends Figure {
 
-	public Circle(int tam, int posx, int posy, int dir, int r, int g, int b, PApplet app) {
-		super(tam, posx, posy, dir, r, g, b, app);
-		this.app=app;
+	public Circle(int tam, int posx, int posy, int dirx, int diry, int r, int g, int b, PApplet app) {
+		super(tam, posx, posy, dirx, diry, r, g, b, app);
+		
 	}
 
 	protected void drawFigure() {

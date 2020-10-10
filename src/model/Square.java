@@ -4,8 +4,8 @@ import processing.core.PApplet;
 
 public class Square extends Figure {
 
-	public Square(int tam, int posx, int posy, int dir, int r, int g, int b, PApplet app) {
-		super(tam, posx, posy, dir, r, g, b, app);
+	public Square(int tam, int posx, int posy, int dirx, int diry, int r, int g, int b, PApplet app) {
+		super(tam, posx, posy, dirx, diry, r, g, b, app);
 		
 	}
 
