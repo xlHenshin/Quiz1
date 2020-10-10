@@ -13,7 +13,15 @@ public class Controller {
 		logic = new Logic(app);
 	}
 	
-
+	public void randomFig() {
+		
+		logic.randomFig();
+	}
+	
+	public void setup() {
+		
+		logic.setup();
+	}
 	
 	public void drawCircle() {
 		

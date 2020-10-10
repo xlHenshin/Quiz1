@@ -14,6 +14,16 @@ public class FigureDraw {
 		controller = new Controller(app);
 	}
 	
+	public void randomFig() {
+		
+		controller.randomFig();
+	}
+	
+	public void setup() {
+		
+		controller.setup();
+	}
+	
 	public void drawCircle() {
 		
 		controller.drawCircle();
