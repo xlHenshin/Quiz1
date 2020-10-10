@@ -1,11 +1,16 @@
 package model;
 
-public class Logic {
+import processing.core.PApplet;
+
+public class Logic extends PApplet {
 	
+	PApplet app;
 	Figure Circle;
 	Figure Square;
 	
-	public Logic() {
+	public Logic(PApplet app) {
+		
+		this.app = app;
 		
 	}
 	
